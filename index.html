@@ -9,8 +9,33 @@
     
 </head>
 <body>
-    <div class="containter"></div>
+    <div class="containter">
+        <div class="row">
+            <div class="start-menu col">
+                <h1>My Coding Quiz</h1>
+                <h3>Click below to begin.</h3>
+                <button id="start-button" type="button">Take Quiz!</button>
+            </div>
+            <div class="question-container col hidden">
+                <h1>Question</h1>
+                <h3 id="Timer"></h3>
+                <div class="questions"></div>
+                    <div  id="question-one" class="question"></div>
+                    <p>Question Text</p>
+                    <button type="button">Option 1</button>
+                    <button type="button">Option 2</button>
+                    <button type="button">Option 3</button>
+                    <button type="button">Option 4</button>
+            </div>
+            </div>
+        </div>
+                <div class="results-container col hidden">
+                    <h1>Results</h1>
+                    <h3>Score: <span class="answers-correct"><0/span> out of 5</h3>
+                        <input type="text" class="iniitials-input" />
+                </div>
 
+    </div>
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
