@@ -1,3 +1,161 @@
-.hidden {
-    display: none;
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+    text-align: center;
+    background-position: fixed;
+    background-image: url("https://i.pinimg.com/originals/4b/d5/5a/4bd55afe5454da9fc99beedbd65ca246.jpg");
+    background-size: 1500px;
+}
+
+.wrapper {
+    padding: 30px;
+    font-size: 40px;
+    background-color: white;
+}
+
+nav {
+    background-color: white;
+    border: rgb(22, 59, 59);
+    border-width: 30px;
+    border-style: solid;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+p {
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#button {
+    text-align: center;
+   }
+
+button, {
+    text-align: center;
+    background-color: rgb(30, 82, 77);
+    border-color: rgb(52, 100, 96);
+    color: white;
+    font-size: 30px;
+    padding: 0px 12px 0px 12px;
+}
+
+.btn:hover {
+    text-align: center;
+    background-color: #4ab1a3;
+    border-color: #3a8888;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 12px 0px 12px;
+}
+
+#goBack, #clearHighScoreList{
+    display: inline-block;
+}
+/* Nav Bar */
+ #score {
+    color:rgb(100, 162, 154); 
+    padding-left: 20px;
+}
+
+ #timer {
+    float: right;
+    padding-right: 30px; 
+ }
+
+/* Coding Quiz Challenge Page */
+
+.quizChallenge {
+    align-items: center !important;
+    text-align: center !important; 
+}
+
+#quizQuestionHeader {
+    font-size: 50px;
+    font-weight: bolder; 
+    padding-top: 100px;
+    padding-left: 15%; 
+    padding-bottom: 15px; 
+}
+
+/* Quiz Question Page */
+li {
+    list-style-type: none;
+    padding-left: 15%; 
+   }
+
+.questionButton {
+    text-align: center !important;
+    background-color: rgb(50, 128, 104) !important;
+    border-color: rgb(55, 99, 95) !important;
+    color: white !important;
+    font-size: 30px !important;
+    padding: 0px 12px 0px 12px !important;
+    margin: 5px; 
+}
+
+ #answerResponse {
+     font-style: italic;
+     color: rgb(83, 83, 83);
+     font-size: 30px;
+     padding-left: 15%;  
+ }
+
+ /* High Score Page */
+
+ #finalScoreIs {
+    padding-left: 15% !important;
+    padding: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#highScores {
+    text-align: left;
+    padding-top: 150px;
+    font-weight: bolder; 
+    padding-top: none !important; 
+}
+
+#highScoreList {
+    background-color: rgb(138, 247, 238);
+    font-size: 30px;
+    font-weight: bolder;
+    padding-right: 75%;
+}
+
+#highScoreButtons {
+    margin-left: 15%; 
+    margin-right: 15%;
+}
+
+
+/* All Done Initial Page */
+
+.row {
+    align-items: center !important;
+    text-align: center !important; 
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+}
+
+#finish {
+    font-weight: bolder;
+    padding-top: 100px;
+    padding-left: 15% !important;
 }
