@@ -63,7 +63,6 @@ button {
     padding: 0px 12px 0px 12px;
 }
 
-
 #goBack, #clearHighScoreList{
     display: inline-block;
 }
@@ -76,6 +75,8 @@ button {
  #timer {
     float: right;
     padding-right: 30px; 
+    padding-bottom: 25px;
+    font-size: 15px;
  }
 
 .quizChallenge {
@@ -124,7 +125,7 @@ li {
     font-weight: bolder;
 }
 
-#highScores {
+#highScore {
     text-align: left;
     padding-top: 150px;
     font-weight: bolder; 
@@ -134,9 +135,10 @@ li {
 
 #highScoreList {
     background-color: rgb(138, 247, 238);
-    font-size: 20px;
     font-weight: bolder;
     padding-right: 75%;
+    font-size: 25px;
+    color: black;
 }
 
 #highScoreButtons {

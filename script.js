@@ -179,6 +179,30 @@ function viewFinalScore() {
       initials.textContent = "Enter Your Initials: "; 
   } 
 
+// View high scores
+function viewHighScore() {
+    header.style.display = "none"; 
+    finish.style.display = "none"; 
+    finalScoreIs.style.display = "none"; 
+    initials.style.display = "none"; 
+    initialButton.style.display = "none"; 
+    initialInput.style.display = "none"; 
+    highScoreButtons.style.display = "block"; 
+  
+    var getInitials = document.getElementById("initialInput").value;  
+
+    var highScoreArray = JSON.parse(localStorage.getItem("highScore")) || [];
+  
+    var localStorageArray = { score: score, time: secondsLeft, initials: getInitials };
+    highScoreArray.push(localStorageArray);
+    localStorage.setItem("highScore", JSON.stringify(highScoreArray)); 
+
+    var highScore = getInitials + " SCORE: " + score + " TIME: " + secondsLeft;
+    
+    $("#highScoreList").append(highScore);
+  
+}
+
 function resetVariables() {
     startScore = 0; 
     questionIndex = 0;
@@ -187,12 +211,10 @@ function resetVariables() {
 //Event Listeners
 submitButton.addEventListener("click", function() { 
     startQuiz()
-    
   })
    
 initialButton.addEventListener("click", function() { 
-    viewHighScores();
-    
+    viewHighScore();
   }) 
   
 clearHighScore.addEventListener("click", function() {
@@ -203,32 +225,9 @@ goBack.addEventListener("click", function() {
   $("#highScoreList").empty() 
   $("#initialInput").val('')
   resetVariables()
-  codingQuizChallenge()
+  codingQuizChallenge();
     
   })
-  
-// View high scores
-function viewHighScores() {
-    header.style.display = "none"; 
-    finish.style.display = "none"; 
-    finalScoreIs.style.display = "none"; 
-    initials.style.display = "none"; 
-    initialButton.style.display = "none"; 
-    initialInput.style.display = "none"; 
-    highScoreButtons.style.display = "block"; 
-    
-    var getInitials = document.getElementById("initialInput").value;  
-  
-    var highScoreArray = JSON.parse(localStorage.getItem("highScore"));
-    
-    var localStorageArray = { score: score, time: secondsLeft, initials: getInitials };
-    highScoreArray.push(localStorageArray);
-    localStorage.setItem("highScore", JSON.stringify(highScoreArray)); 
-  
-    var highScores = getInitials + " SCORE: " + score + " TIME: " + secondsLeft;
-  
-    $("#highScoreList").append(highScores);
-  }
 
 // Restart 
 codingQuizChallenge(); 
