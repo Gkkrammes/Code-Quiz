@@ -181,19 +181,18 @@ function viewFinalScore() {
 //Event Listeners
 submitButton.addEventListener("click", function() { 
     startQuiz()
-    console.log("start")
+    
   })
 
-  // CLICK TO VIEW HIGH SCORES - DOES NOT WORK 
 score.addEventListener("click", function() {
     viewHighScores();
-    console.log("view high scores")
+    
   })
   
    
 initialButton.addEventListener("click", function() { 
     viewHighScores();
-    console.log("initial button")
+    
   }) 
   
 clearHighScore.addEventListener("click", function() {
@@ -203,10 +202,10 @@ clearHighScore.addEventListener("click", function() {
 goBack.addEventListener("click", function() { 
     resetVariables()
     codingQuizChallenge()
-    console.log("restart quiz")
+    
   })
   
-// Show high score list 
+// View high scores
 function viewHighScores() {
     header.style.display = "none"; 
     finish.style.display = "none"; 
@@ -229,7 +228,7 @@ function viewHighScores() {
     $("#highScoreList").append(highScores);
   }
 
-// Page starts at home page 
+// Restart 
 codingQuizChallenge(); 
 
 

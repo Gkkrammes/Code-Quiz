@@ -67,7 +67,7 @@ button, {
 #goBack, #clearHighScoreList{
     display: inline-block;
 }
-/* Nav Bar */
+
  #score {
     color:rgb(100, 162, 154); 
     padding-left: 20px;
@@ -78,34 +78,31 @@ button, {
     padding-right: 30px; 
  }
 
-/* Coding Quiz Challenge Page */
-
 .quizChallenge {
-    align-items: center !important;
-    text-align: center !important; 
+    align-items: center;
+    text-align: center; 
 }
 
 #quizQuestionHeader {
-    font-size: 50px;
+    font-size: 25px;
     font-weight: bolder; 
-    padding-top: 100px;
+    padding-top: 15px;
     padding-left: 15%; 
     padding-bottom: 15px; 
 }
 
-/* Quiz Question Page */
 li {
     list-style-type: none;
     padding-left: 15%; 
    }
 
 .questionButton {
-    text-align: center !important;
-    background-color: rgb(50, 128, 104) !important;
-    border-color: rgb(55, 99, 95) !important;
-    color: white !important;
-    font-size: 30px !important;
-    padding: 0px 12px 0px 12px !important;
+    text-align: center ;
+    background-color: rgb(50, 128, 104);
+    border-color: rgb(55, 99, 95);
+    color: white;
+    font-size: 20px;
+    padding: 0px 12px 0px 12px;
     margin: 5px; 
 }
 
@@ -116,10 +113,8 @@ li {
      padding-left: 15%;  
  }
 
- /* High Score Page */
-
  #finalScoreIs {
-    padding-left: 15% !important;
+    padding-left: 15%;
     padding: 20px;
     font-size: 35px;
     font-weight: bold;
@@ -129,7 +124,7 @@ li {
     text-align: left;
     padding-top: 150px;
     font-weight: bolder; 
-    padding-top: none !important; 
+    padding-top: none; 
 }
 
 #highScoreList {
@@ -144,18 +139,15 @@ li {
     margin-right: 15%;
 }
 
-
-/* All Done Initial Page */
-
 .row {
-    align-items: center !important;
-    text-align: center !important; 
-    padding-left: 15% !important;
-    padding-right: 15% !important;
+    align-items: center;
+    text-align: center; 
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #finish {
     font-weight: bolder;
     padding-top: 100px;
-    padding-left: 15% !important;
+    padding-left: 15%;
 }
