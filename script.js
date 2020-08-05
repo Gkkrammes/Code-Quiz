@@ -148,6 +148,7 @@ function checkAnswer(event) {
     }
     if (answer === correctAnswer) {
     answerResponse.textContent = "Correct!"; 
+    score++;
     } else {
     answerResponse.textContent = "Incorrect!"; 
         secondsLeft -= 5
@@ -173,22 +174,21 @@ function viewFinalScore() {
     initialButton.style.display = "block" 
     initialInput.style.display = "block" 
   
-      finalScoreIs.textContent = "Your final score is " + secondsLeft;
+      finalScoreIs.textContent = "Your final score is " + score + " and your time remaining is " + secondsLeft + "!";
       initialButton.textContent = "Submit"; 
       initials.textContent = "Enter Your Initials: "; 
   } 
+
+function resetVariables() {
+    startScore = 0; 
+    questionIndex = 0;
+  }
 
 //Event Listeners
 submitButton.addEventListener("click", function() { 
     startQuiz()
     
   })
-
-score.addEventListener("click", function() {
-    viewHighScores();
-    
-  })
-  
    
 initialButton.addEventListener("click", function() { 
     viewHighScores();
@@ -200,8 +200,10 @@ clearHighScore.addEventListener("click", function() {
   })
   
 goBack.addEventListener("click", function() { 
-    resetVariables()
-    codingQuizChallenge()
+  $("#highScoreList").empty() 
+  $("#initialInput").val('')
+  resetVariables()
+  codingQuizChallenge()
     
   })
   
@@ -217,13 +219,13 @@ function viewHighScores() {
     
     var getInitials = document.getElementById("initialInput").value;  
   
-    var highScoreArray = JSON.parse(localStorage.getItem("highScore")) || [];
+    var highScoreArray = JSON.parse(localStorage.getItem("highScore"));
     
-    var localStorageArray = { score: secondsLeft, initials: getInitials };
+    var localStorageArray = { score: score, time: secondsLeft, initials: getInitials };
     highScoreArray.push(localStorageArray);
     localStorage.setItem("highScore", JSON.stringify(highScoreArray)); 
   
-    var highScores = getInitials + ": " + secondsLeft;
+    var highScores = getInitials + " SCORE: " + score + " TIME: " + secondsLeft;
   
     $("#highScoreList").append(highScores);
   }

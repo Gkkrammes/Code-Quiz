@@ -16,7 +16,7 @@ body {
 
 .wrapper {
     padding: 30px;
-    font-size: 40px;
+    font-size: 25px;
     background-color: white;
 }
 
@@ -45,7 +45,7 @@ p {
     text-align: center;
    }
 
-button, {
+button {
     text-align: center;
     background-color: rgb(30, 82, 77);
     border-color: rgb(52, 100, 96);
@@ -59,10 +59,10 @@ button, {
     background-color: #4ab1a3;
     border-color: #3a8888;
     color: white;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 35px;
     padding: 0px 12px 0px 12px;
 }
+
 
 #goBack, #clearHighScoreList{
     display: inline-block;
@@ -113,11 +113,15 @@ li {
      padding-left: 15%;  
  }
 
+ #finalScore {
+     text-align: center;
+ }
+
  #finalScoreIs {
     padding-left: 15%;
     padding: 20px;
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 #highScores {
@@ -125,11 +129,12 @@ li {
     padding-top: 150px;
     font-weight: bolder; 
     padding-top: none; 
+    font-size: 20px;
 }
 
 #highScoreList {
     background-color: rgb(138, 247, 238);
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bolder;
     padding-right: 75%;
 }
