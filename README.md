@@ -1,5 +1,5 @@
-# homework-4
-https://gkkrammes.github.io/homework-4/
+# Code Quiz
+https://gkkrammes.github.io/Code-Quiz/
 
 Web APIs: Code Quiz
 
